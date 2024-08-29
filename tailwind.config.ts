@@ -1,13 +1,14 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -52,6 +53,14 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        color: {
+          1: "#AC6AFF",
+          2: "#FFC876",
+          3: "#FF776F",
+          4: "#7ADB78",
+          5: "#858DFF",
+          6: "#FF98E2",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -74,7 +83,22 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
+  plugins: [
+    require("tailwindcss-animate"),
+    plugin(function ({ addBase, addComponents, addUtilities }) {
+      addBase({});
+      addComponents({
+        ".my-container": {
+          "@apply w-full px-4 md:px-[5.12rem] lg:px-32 mx-auto": {},
+        },
+      });
+      addUtilities({
+        ".tap-highlight-color": {
+          "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+        },
+      });
+    }),
+  ],
+} satisfies Config;
 
-export default config
+export default config;
