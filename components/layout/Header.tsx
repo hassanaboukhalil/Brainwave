@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="max-w-full my-container py-6 flex flex-wrap items-center justify-between bg-gray-100">
+    <header className="max-w-full my-container py-6 flex flex-wrap items-center justify-between">
       <Link href="/">
         <Logo />
       </Link>
