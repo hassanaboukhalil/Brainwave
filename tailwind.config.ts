@@ -61,6 +61,9 @@ const config = {
           5: "#858DFF",
           6: "#FF98E2",
         },
+        txtColor: {
+          1: "#ffffff80",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

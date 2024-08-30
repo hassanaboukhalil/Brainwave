@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 
 import {
   Sheet,
@@ -12,10 +12,10 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import Logo from "@/components/layout/Logo";
 import MenuIcon from "../../assets/socials/hamburger.svg";
-import React from "react";
+import React, { useState } from "react";
 import { LogIn } from "lucide-react";
 
-const MobileNav = async () => {
+const MobileNav = () => {
   return (
     <div className="lg:hidden flex align-middle">
       <Sheet>
@@ -30,7 +30,7 @@ const MobileNav = async () => {
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="border-none bg-white"
+          className="border-none bg-slate-800"
           aria-labelledby="sidebar-heading"
           aria-describedby="sidebar-description"
         >
@@ -40,9 +40,6 @@ const MobileNav = async () => {
             id="sidebar-heading"
           >
             <Logo />
-            <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">
-              Horizon
-            </h1>
           </Link>
           <div className="mobilenav-sheet" id="sidebar-description">
             <SheetClose asChild>
@@ -55,6 +52,7 @@ const MobileNav = async () => {
                           asChild
                           key={link.href}
                           variant="link"
+                          className="hover:text-color-1"
                           // variant={pathname === link.href ? "default" : "link"}
                         >
                           <Link

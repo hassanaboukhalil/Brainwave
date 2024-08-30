@@ -1,4 +1,4 @@
-import { CircleDollarSign, ListTodo, User } from "lucide-react";
+import { BookText, CircleDollarSign, WandSparkles, Kanban } from "lucide-react";
 
 type NavLink = {
   id: string;
@@ -12,7 +12,7 @@ const links: NavLink[] = [
     id: "0",
     href: "#features",
     label: "FEATURES",
-    icon: <ListTodo />,
+    icon: <WandSparkles />,
   },
   {
     id: "1",
@@ -24,13 +24,13 @@ const links: NavLink[] = [
     id: "2",
     href: "#how-to-use",
     label: "HOW TO USE",
-    icon: <ListTodo />,
+    icon: <BookText />,
   },
   {
     id: "3",
     href: "#roadmap",
     label: "ROADMAP",
-    icon: <ListTodo />,
+    icon: <Kanban />,
   },
 ];
 
