@@ -61,6 +61,7 @@ const config = {
           5: "#858DFF",
           6: "#FF98E2",
           7: "#4a1b5f",
+          8: "#121212",
         },
         txtColor: {
           1: "#ffffff80",

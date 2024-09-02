@@ -61,8 +61,8 @@
 
 
   /* =====  SHADCN OVERRIDES */
-  .button {
-    @apply py-4 px-6 flex-center gap-3 rounded-full text-16 font-semibold focus-visible:ring-offset-0 focus-visible:ring-transparent !important;
+  .btn {
+    @apply rounded-xl rounded-tr-3xl text-xs font-bold;
   }
 
 
