@@ -29,7 +29,7 @@ const Navbar = () => {
             onClick={() => selectNavLink(link.href)}
           >
             <Link href={link.href}>
-              {link.icon} <span className="capitalize">{link.label}</span>
+              <span className="capitalize">{link.label}</span>
             </Link>
           </Button>
         );
@@ -41,7 +41,7 @@ const Navbar = () => {
         variant={"link"}
       >
         <Link href="/login" className="text-txtColor-1 hover:text-color-1">
-          <LogIn /> <span className="uppercase">Login</span>
+          <span className="uppercase">Login</span>
         </Link>
       </Button>
     </nav>

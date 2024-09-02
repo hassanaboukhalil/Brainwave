@@ -30,7 +30,7 @@ const MobileNav = () => {
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="border-none bg-slate-800"
+          className="border-none bg-color-8 opacity-90"
           aria-labelledby="sidebar-heading"
           aria-describedby="sidebar-description"
         >
