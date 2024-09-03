@@ -65,6 +65,7 @@ const config = {
         },
         txtColor: {
           1: "#ffffff80",
+          2: "#ADA8C3",
         },
       },
       borderRadius: {
@@ -94,7 +95,7 @@ const config = {
       addBase({});
       addComponents({
         ".my-container": {
-          "@apply w-full px-4 md:px-[5.12rem] lg:px-32 mx-auto": {},
+          "@apply w-full px-8 md:px-[5.12rem] lg:px-32 mx-auto": {},
         },
         ".h1": {
           "@apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]":

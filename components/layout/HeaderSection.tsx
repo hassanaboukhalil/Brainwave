@@ -1,15 +1,15 @@
-const HeaderSection = ({
-  title,
-  subtitle,
-}: {
-  title: string;
-  subtitle?: string;
-}) => {
+import { ReactNode } from "react";
+
+type IHeaderSectionProps = {
+  className?: string;
+  children: ReactNode;
+};
+
+const HeaderSection = (props: IHeaderSectionProps) => {
   return (
-    <>
-      <h2 className="h2-bold text-dark-600">{title}</h2>
-      {subtitle && <p className="p-16-regular mt-4">{subtitle}</p>}
-    </>
+    <h2 className={`h2 h2-bold text-white ${props.className}`}>
+      {props.children}
+    </h2>
   );
 };
 export default HeaderSection;

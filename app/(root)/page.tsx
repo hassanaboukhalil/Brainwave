@@ -1,3 +1,4 @@
+import Benefits from "@/components/Benefits";
 import { Hero } from "@/components/Hero";
 import { Sponsors } from "@/components/Sponsors";
 
@@ -32,6 +33,7 @@ export default async function Home() {
     <div className="text-gray-600 antialiased">
       <Hero />
       <Sponsors />
+      <Benefits />
     </div>
   );
 }

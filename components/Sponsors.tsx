@@ -10,7 +10,7 @@ const Sponsors = () => (
     <div className="w-full lg:grid lg:grid-cols-5 justify-between">
       {sponsers.map((sponser) => {
         return (
-          <div key={sponser.id}>
+          <div key={sponser.id} className="flex justify-center">
             <Image src={sponser.img} alt={sponser.alt} color="white" />
           </div>
         );

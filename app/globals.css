@@ -13,6 +13,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  .card{
+    @apply rounded-xl rounded-tr-[3rem]
+  }
 }
 
 /* ========================================== TAILWIND STYLES */
@@ -29,9 +32,9 @@
   }
 
   /* 36 */
-  .h2-bold {
+  /* .h2-bold {
     @apply text-[30px] font-bold md:text-[36px] leading-[110%];
-  }
+  } */
 
   .text-12 {
     @apply text-[12px] leading-[16px];
