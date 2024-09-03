@@ -61,11 +61,13 @@ const config = {
           5: "#858DFF",
           6: "#FF98E2",
           7: "#4a1b5f",
-          8: "#121212",
+          8: "#0e0c15",
+          // 8: "#121212",
         },
         txtColor: {
-          1: "#ffffff80",
+          1: "#CAC6DD", //"#ffffff80"
           2: "#ADA8C3",
+          3: "#757185",
         },
       },
       borderRadius: {
@@ -86,6 +88,11 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        "conic-gradient":
+          "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
+        // "benefit-card-1": "url(assets/benefits/card-1.svg)",
       },
     },
   },
