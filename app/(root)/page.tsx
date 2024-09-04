@@ -1,6 +1,7 @@
 import Benefits from "@/components/Benefits";
 import Collaboration from "@/components/Collaboration";
 import { Hero } from "@/components/Hero";
+import HowToUse from "@/components/HowToUse";
 import { Sponsors } from "@/components/Sponsors";
 
 export const metadata = {
@@ -36,6 +37,7 @@ export default async function Home() {
       <Sponsors />
       <Benefits />
       <Collaboration />
+      <HowToUse />
     </div>
   );
 }

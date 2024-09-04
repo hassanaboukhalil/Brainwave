@@ -62,12 +62,14 @@ const config = {
           6: "#FF98E2",
           7: "#4a1b5f",
           8: "#0e0c15",
+          9: "#757185",
           // 8: "#121212",
         },
         txtColor: {
           1: "#CAC6DD", //"#ffffff80"
           2: "#ADA8C3",
           3: "#757185",
+          4: "white",
         },
       },
       borderRadius: {
