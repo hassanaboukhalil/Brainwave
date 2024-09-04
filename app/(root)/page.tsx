@@ -3,6 +3,7 @@ import Collaboration from "@/components/Collaboration";
 import { Hero } from "@/components/Hero";
 import HowToUse from "@/components/HowToUse";
 import Pricing from "@/components/Pricing";
+import Roadmap from "@/components/Roadmap";
 import { Sponsors } from "@/components/Sponsors";
 
 export const metadata = {
@@ -40,6 +41,7 @@ export default async function Home() {
       <Collaboration />
       <HowToUse />
       <Pricing />
+      <Roadmap />
     </div>
   );
 }
