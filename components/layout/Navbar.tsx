@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [currentHash, setCurrentHash] = useState(
-    window.location.hash ? window.location.hash : ""
+    location.hash ? location.hash : ""
   );
 
   function selectNavLink(linkHref: string) {
@@ -23,7 +23,7 @@ const Navbar = () => {
             key={link.id}
             // className="flex items-center gap-x-2 hover:text-color-1"
             className={`flex items-center gap-x-2 hover:text-color-1 ${
-              currentHash === link.href ? "text-white" : "text-txtColor-1"
+              currentHash === link.href ? "text-white" : "text-txtColor-3"
             }`}
             variant={"link"}
             onClick={() => selectNavLink(link.href)}
@@ -40,7 +40,7 @@ const Navbar = () => {
         className="flex items-center gap-x-2 bg-inherit"
         variant={"link"}
       >
-        <Link href="/login" className="text-txtColor-1 hover:text-color-1">
+        <Link href="/login" className="text-txtColor-3 hover:text-color-1">
           <span className="uppercase">Login</span>
         </Link>
       </Button>

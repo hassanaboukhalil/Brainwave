@@ -17,7 +17,10 @@ import { Separator } from "./ui/separator";
 
 const HowToUse = () => {
   return (
-    <Section className="bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-10% via-60% to-90%">
+    <Section
+      className="bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-10% via-60% to-90%"
+      id="how-to-use"
+    >
       <HeaderSection>Generative AI made for creators.</HeaderSection>
       <p className="body-2 text-txtColor-3 pt-4">
         Brainwave unlocks the potential of AI-powered applications

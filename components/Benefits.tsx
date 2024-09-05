@@ -5,7 +5,10 @@ import { ThreeDCardDemo } from "./ui/ThreeDCardDemo";
 
 const Benefits = () => {
   return (
-    <Section className="flex flex-col items-center bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-10% via-60% to-90%">
+    <Section
+      className="flex flex-col items-center bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-10% via-60% to-90%"
+      id="features"
+    >
       <HeaderSection className="md:w-[50%] md:text-center">
         Chat Smarter, Not Harder with{" "}
         <span className="text-color-1">Brainwave</span>

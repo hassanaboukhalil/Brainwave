@@ -6,7 +6,10 @@ import { Button } from "./ui/button";
 
 const Roadmap = () => {
   return (
-    <Section className="bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-10% via-60% to-90%">
+    <Section
+      className="bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-10% via-60% to-90%"
+      id="roadmap"
+    >
       <p className="uppercase text-xs text-txtColor-2">
         [ ready to get started ]
       </p>

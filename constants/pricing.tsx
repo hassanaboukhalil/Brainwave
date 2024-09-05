@@ -21,7 +21,7 @@ export const pricing = [
     ],
     premium: false,
     buttonText: "Get Started",
-    buttonVariant: "default",
+    buttonVariant: "primary",
   },
   {
     id: "1",
@@ -45,7 +45,7 @@ export const pricing = [
     ],
     premium: true,
     buttonText: "Get Started",
-    buttonVariant: "default",
+    buttonVariant: "primary",
   },
   {
     id: "2",

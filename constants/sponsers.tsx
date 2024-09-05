@@ -22,7 +22,7 @@ export const sponsers = [
     alt: "Company Logo",
   },
   {
-    id: "3",
+    id: "4",
     img: image1,
     alt: "Company Logo",
   },

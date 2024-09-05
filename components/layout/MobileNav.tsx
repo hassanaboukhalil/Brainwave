@@ -1,93 +1,100 @@
 "use client";
 
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 import links from "@/constants/links";
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "../ui/button";
 import Logo from "@/components/layout/Logo";
 import MenuIcon from "../../assets/socials/hamburger.svg";
 import React, { useState } from "react";
-import { LogIn } from "lucide-react";
+import { LogIn, X } from "lucide-react";
 
 const MobileNav = () => {
-  return (
-    <div className="lg:hidden flex align-middle">
-      <Sheet>
-        <SheetTrigger>
-          <Image
-            src={MenuIcon}
-            width={30}
-            height={30}
-            alt="menu"
-            className="cursor-pointer"
-          />
-        </SheetTrigger>
-        <SheetContent
-          side="left"
-          className="border-none bg-color-8 opacity-90"
-          aria-labelledby="sidebar-heading"
-          aria-describedby="sidebar-description"
-        >
-          <Link
-            href="/"
-            className="cursor-pointer flex items-center gap-1 px-4"
-            id="sidebar-heading"
-          >
-            <Logo />
-          </Link>
-          <div className="mobilenav-sheet" id="sidebar-description">
-            <SheetClose asChild>
-              <nav className="flex h-screen flex-col justify-between pt-16 text-white">
-                <ul>
-                  {links.map((link) => {
-                    return (
-                      <li key={link.label} className="border-b-[1px] p-1">
-                        <Button
-                          asChild
-                          key={link.href}
-                          variant="link"
-                          className="hover:text-color-1"
-                          // variant={pathname === link.href ? "default" : "link"}
-                        >
-                          <Link
-                            href={link.href}
-                            className="flex items-center gap-x-2 "
-                          >
-                            {link.icon}{" "}
-                            <span className="capitalize">{link.label}</span>
-                          </Link>
-                        </Button>
-                      </li>
-                    );
-                  })}
+  const [isOpen, setIsOpen] = useState(false);
 
-                  <li key="login" className="border-b-[1px] p-1">
-                    <Button
-                      key="login"
-                      variant="link"
-                      asChild
-                      // variant={pathname === link.href ? "default" : "link"}
-                    >
-                      <Link
-                        href="/login"
-                        className="flex items-center gap-x-2 "
-                      >
-                        <LogIn /> <span className="uppercase">Login</span>
-                      </Link>
-                    </Button>
-                  </li>
-                </ul>
-              </nav>
-            </SheetClose>
-          </div>
-        </SheetContent>
-      </Sheet>
+  const handleNavigation = (href: string) => {
+    if (href.startsWith("#")) {
+      const section = document.querySelector(href);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.location.href = href;
+    }
+    setIsOpen(false); // Close sidebar after navigating
+  };
+
+  return (
+    <div className="lg:hidden flex items-center">
+      {/* Hamburger Menu Button */}
+      <Button
+        className="flex items-center justify-center p-0"
+        variant="ghost"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <Image src={MenuIcon} width={30} height={30} alt="menu" />
+      </Button>
+
+      {/* Sidebar Overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      {/* Sidebar */}
+      <div
+        className={`px-8 fixed top-0 left-0 h-full w-[90%] bg-color-8 z-50 transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out`}
+      >
+        <div className="py-6 flex items-center justify-between">
+          <Logo />
+          <Button
+            className="p-0"
+            variant="ghost"
+            onClick={() => setIsOpen(false)}
+          >
+            {/* X Close Button */}
+            <X />
+          </Button>
+        </div>
+
+        {/* Navigation Links */}
+        <nav className="flex flex-col pt-16">
+          <ul className="flex flex-col">
+            {links.map((link) => (
+              <li key={link.label} className="border-b-[1px] p-1 w-full">
+                <Button
+                  asChild
+                  variant="link"
+                  className="text-white hover:text-color-1 w-full flex justify-start"
+                  onClick={() => handleNavigation(link.href)}
+                >
+                  <span className="gap-2">
+                    {link.icon}
+                    <span>{link.label}</span>
+                  </span>
+                </Button>
+              </li>
+            ))}
+
+            <li key="login" className="border-b-[1px] p-1 w-full">
+              <Button
+                asChild
+                variant="link"
+                className="text-white hover:text-color-1 w-full flex justify-start"
+                onClick={() => handleNavigation("/login")}
+              >
+                <span className="gap-2">
+                  <LogIn />
+                  <span>Login</span>
+                </span>
+              </Button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 };
