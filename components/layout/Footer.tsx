@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <section className="flex justify-center items-center my-container flex-col pt-12 pb-6 bg-color-8">
       <div className="w-full flex justify-between items-center md:flex-row flex-col">
-        <p className="font-poppins font-normal text-center body-1 text-txtColor-2">
+        <p className="font-poppins font-normal text-center body-2 text-txtColor-2">
           Copyright Ⓒ 2024 Brainwave. All Rights Reserved.
         </p>
 

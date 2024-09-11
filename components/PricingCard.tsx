@@ -4,7 +4,7 @@ import check from "@/assets/collaborations/check.svg";
 
 const PricingCard = ({ item }: any) => {
   return (
-    <div className="rounded-[2rem] border border-color-9 px-4 py-9 flex flex-col h-[40rem] bg-color-8 md:px-8 md:h-auto">
+    <div className="rounded-[2rem] border border-color-9 px-4 py-9 flex flex-col h-[40rem] bg-color-8 md:px-8 md:h-auto odd:lg:translate-y-4 lg:hover:scale-110 lg:transition-transform lg:duration-300">
       <h4
         className={`h3  ${
           item.title === "Basic" ? "text-color-2" : item.titleColor

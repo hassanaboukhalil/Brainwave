@@ -32,7 +32,7 @@ const HowToUse = () => {
         <div className="rounded-3xl h-[39rem] flex-center relative z-10 overflow-hidden bg-color-8 border border-color-9">
           <div className="absolute left-0 w-full h-full md:left-[-260px]">
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover lg:object-contain"
               src={imgService1}
               alt="service 1"
             />
@@ -40,7 +40,7 @@ const HowToUse = () => {
 
           <div className="px-6 z-20 md:w-1/2 md:absolute md:right-0">
             <h4 className="h3 text-txtColor-4">Smartest AI</h4>
-            <p className="body-2 text-txtColor-2 pt-6">
+            <p className="body-2 text-txtColor-2 pt-6 lg:w-[80%]">
               Brainwave unlocks the potential of AI-powered applications
             </p>
             <div className="pt-6">

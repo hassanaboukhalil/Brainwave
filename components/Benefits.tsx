@@ -13,7 +13,7 @@ const Benefits = () => {
         Chat Smarter, Not Harder with{" "}
         <span className="text-color-1">Brainwave</span>
       </HeaderSection>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-12 w-full justify-between">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-12 w-full justify-between lg:gap-0 lg:gap-y-12">
         {benefits.map((benefit) => {
           return (
             <ThreeDCardDemo
