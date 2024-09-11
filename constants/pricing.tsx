@@ -2,7 +2,7 @@ export const pricing = [
   {
     id: "0",
     title: "Basic",
-    titleColor: "color-2",
+    titleColor: "text-color-3",
     description: "AI chatbot, personalized recommendations",
     price: "0",
     features: [
@@ -26,7 +26,7 @@ export const pricing = [
   {
     id: "1",
     title: "Premium",
-    titleColor: "color-1",
+    titleColor: "text-color-1",
     description: "Advanced AI chatbot, priority support, analytics dashboard",
     price: "9.99",
     features: [
@@ -50,7 +50,7 @@ export const pricing = [
   {
     id: "2",
     title: "Enterprise",
-    titleColor: "color-3",
+    titleColor: "text-color-3",
     description: "Custom AI chatbot, advanced analytics, dedicated account",
     price: null,
     features: [

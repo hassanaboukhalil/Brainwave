@@ -6,10 +6,10 @@ import PricingCard from "./PricingCard";
 const Pricing = () => {
   return (
     <Section
-      className="bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-10% via-60% to-90%"
+      className="bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-5% via-60% to-90%"
       id="pricing"
     >
-      <p className="uppercase text-xs text-txtColor-2">
+      <p className="uppercase text-xs text-txtColor-2 md:text-center">
         [ get started with brainwave ]
       </p>
       <HeaderSection className="pt-4">Pay once, use forever</HeaderSection>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const RoadmapCard = ({ item }: any) => {
   return (
-    <div className="rounded-[2rem] border border-color-9 py-5 flex flex-col text-white bg-color-8">
+    <div className="rounded-[2rem] border border-color-9 py-5 flex flex-col text-white bg-color-8 even:md:translate-y-[7rem]">
       <div className="flex justify-between px-8 items-center">
         <span className="body-2 text-txtColor-2">
           {"[ " + item.date + " ]"}

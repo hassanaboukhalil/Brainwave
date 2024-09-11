@@ -4,8 +4,14 @@ import check from "@/assets/collaborations/check.svg";
 
 const PricingCard = ({ item }: any) => {
   return (
-    <div className="rounded-[2rem] border border-color-9 px-4 py-9 flex flex-col h-[40rem] text-white bg-color-8">
-      <h4 className={`h3 text-${item.titleColor}`}>{item.title}</h4>
+    <div className="rounded-[2rem] border border-color-9 px-4 py-9 flex flex-col h-[40rem] bg-color-8 md:px-8 md:h-auto">
+      <h4
+        className={`h3  ${
+          item.title === "Basic" ? "text-color-2" : item.titleColor
+        }`}
+      >
+        {item.title}
+      </h4>
       <p className="body-2 text-txtColor-2 pt-4">{item.description}</p>
       {item.price ? (
         <div className="flex items-center pt-5">

@@ -10,7 +10,9 @@ const Collaboration = () => {
   return (
     <Section className="flex flex-col lg:flex-row bg-color-8">
       <div>
-        <HeaderSection>AI Chat App for seamless collaboration</HeaderSection>
+        <HeaderSection className="w-[70%]">
+          AI Chat App for seamless collaboration
+        </HeaderSection>
         <div>
           {collaborationFeatures.map((feature) => {
             return (
@@ -35,7 +37,7 @@ const Collaboration = () => {
           With smart automation and top-notch security, it&#39;s the perfect
           solution for teams looking to work smarter.
         </p>
-        <CollarborationsCircle />
+        <CollarborationsCircle className="md:mt-12" />
       </div>
     </Section>
   );

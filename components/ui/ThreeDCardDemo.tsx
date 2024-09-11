@@ -10,7 +10,7 @@ interface ThreeDCardDemoProps {
   title: string;
   text: string;
   icon: string;
-  backgroundImg: any;
+  backgroundImg?: any;
 }
 
 export function ThreeDCardDemo({
@@ -20,28 +20,30 @@ export function ThreeDCardDemo({
   backgroundImg,
 }: ThreeDCardDemoProps) {
   return (
-    <CardContainer className="inter-var text-white w-[90%] md:w-auto">
+    <CardContainer className="inter-var text-white w-[90%] md:w-auto z-10">
       <CardBody className="bg-[#0e0c15] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-96 h-auto p-6 border card">
-        <CardItem translateZ="50" className="h4">
+        <CardItem translateZ="50" className="h4 z-20">
           {title}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="body-2 max-w-sm mt-2 text-txtColor-2"
+          className="body-2 max-w-sm mt-2 text-txtColor-2 z-20"
         >
           {text}
         </CardItem>
-        <CardItem className="absolute h-full w-full -z-10">
-          <Image
-            src={backgroundImg}
-            height="1000"
-            width="1000"
-            className="hidden hover:block opacity-35 object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </CardItem>
-        <div className="flex justify-between items-center mt-20">
+        {backgroundImg && (
+          <div className="absolute h-full w-full top-0 left-0">
+            <Image
+              src={backgroundImg}
+              // height="1000"
+              // width="1000"
+              className="opacity-20 object-cover w-full h-full card"
+              alt="robot"
+            />
+          </div>
+        )}
+        <div className="flex justify-between items-center mt-20 z-20">
           {/* <CardItem
             translateZ={20}
             as="button"

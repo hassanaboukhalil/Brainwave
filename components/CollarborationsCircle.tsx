@@ -4,9 +4,15 @@ import curve2 from "@/assets/collaborations/curve-2.svg";
 import { collabApps } from "@/constants/collabApps";
 import Image from "next/image";
 
-const CollarborationsCircle = () => {
+type ICollarborationsCircleProps = {
+  className?: string;
+};
+
+const CollarborationsCircle = (props: ICollarborationsCircleProps) => {
   return (
-    <div className="relative left-1/2 flex w-[22rem] aspect-square border border-[#252134] rounded-full -translate-x-1/2 scale-75 md:scale-100">
+    <div
+      className={`relative left-1/2 flex w-[22rem] aspect-square border border-[#252134] rounded-full -translate-x-1/2 scale-75 md:scale-100 ${props.className}`}
+    >
       <div className="flex w-60 aspect-square m-auto border border-[#252134] rounded-full">
         <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
           <div className="flex items-center justify-center w-full h-full bg-[#0E0C15] rounded-full">

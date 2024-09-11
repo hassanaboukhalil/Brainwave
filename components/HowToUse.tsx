@@ -18,11 +18,11 @@ import { Separator } from "./ui/separator";
 const HowToUse = () => {
   return (
     <Section
-      className="bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-10% via-60% to-90%"
+      className="bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-10% via-60% to-95%"
       id="how-to-use"
     >
       <HeaderSection>Generative AI made for creators.</HeaderSection>
-      <p className="body-2 text-txtColor-3 pt-4">
+      <p className="body-2 text-txtColor-3 pt-4 md:text-center">
         Brainwave unlocks the potential of AI-powered applications
       </p>
 
@@ -30,7 +30,7 @@ const HowToUse = () => {
       <div className="flex flex-col pt-9 gap-4">
         {/*  card 1 */}
         <div className="rounded-3xl h-[39rem] flex-center relative z-10 overflow-hidden bg-color-8 border border-color-9">
-          <div className="absolute left-0 w-full h-full">
+          <div className="absolute left-0 w-full h-full md:left-[-260px]">
             <Image
               className="w-full h-full object-cover"
               src={imgService1}
@@ -38,7 +38,7 @@ const HowToUse = () => {
             />
           </div>
 
-          <div className="px-6 z-20">
+          <div className="px-6 z-20 md:w-1/2 md:absolute md:right-0">
             <h4 className="h3 text-txtColor-4">Smartest AI</h4>
             <p className="body-2 text-txtColor-2 pt-6">
               Brainwave unlocks the potential of AI-powered applications
@@ -58,7 +58,7 @@ const HowToUse = () => {
             </div>
           </div>
 
-          <div className="absolute bottom-1 md:bottom-[5%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[85%] md:w-[80%] lg:w-[50%] h-10 rounded-full flex items-center bg-color-8 text-white opacity-90 pt-7 pb-7 pl-6 gap-4 border border-color-9">
+          <div className="absolute bottom-1 md:bottom-[5%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[85%] lg:w-[50%] h-10 rounded-full flex items-center bg-color-8 text-white opacity-90 pt-7 pb-7 pl-6 gap-4 border border-color-9 md:w-[95%]">
             <Image className="w-6" src={loading} alt="loading" />
             <p className="text-txtColor-4">AI is generating</p>
           </div>
@@ -100,14 +100,14 @@ const HowToUse = () => {
                 The world&#39;s most powerful AI photo and video art generation
                 engine. What will you create?
               </p>
-              <div className="pt-6 flex w-full justify-between">
+              <div className="pt-6 flex w-full justify-between md:gap-12 md:justify-center">
                 {brainwaveServicesIcons.map((icon) => {
                   return <Image key={icon.id} src={icon.src} alt="icon" />;
                 })}
               </div>
             </div>
 
-            <div className="h-[20rem] rounded-xl bg-black z-10 relative">
+            <div className="h-[20rem] rounded-xl bg-black z-10 relative md:w-full">
               <Image
                 className="w-full h-full object-cover"
                 src={imgService3}

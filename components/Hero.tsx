@@ -8,7 +8,7 @@ import robot from "@/assets/hero/robot.jpg";
 import loading from "@/assets/hero/loading.png";
 
 const Hero = () => (
-  <Section className="bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-30% via-60% to-90% pt-15 md:pt-20">
+  <section className="my-container bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-40% via-60% to-99% pt-20 md:pt-20 md:from-30%">
     <div className="text-center text-white">
       <h1 className="h1 mb-6">
         Explore the Possibilities <br /> of AI Chatting with{" "}
@@ -38,7 +38,7 @@ const Hero = () => (
         <p>AI is generating</p>
       </div>
     </ContainerScroll>
-  </Section>
+  </section>
 );
 
 export { Hero };

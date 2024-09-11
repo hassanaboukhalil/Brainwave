@@ -34,7 +34,7 @@ export const metadata = {
 
 export default async function Home() {
   return (
-    <div className="text-gray-600 antialiased">
+    <div className="antialiased">
       <Hero />
       <Sponsors />
       <Benefits />

@@ -13,7 +13,7 @@ const Footer = () => {
           Copyright Ⓒ 2024 Brainwave. All Rights Reserved.
         </p>
 
-        <div className="flex flex-row mb-3 md:mt-0 mt-6">
+        <div className="flex flex-row mb-3 md:mt-0 mt-6 md:mb-0">
           {socialMedia.map((social, index) => (
             <Link href={social.link} key={social.id}>
               <Image
