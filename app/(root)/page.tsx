@@ -12,19 +12,19 @@ export const metadata = {
   openGraph: {
     title: "Brainwave",
     description: "Explore the Possibilities of AI Chatting with Brainwave",
-    url: "https://my-nextjs-template.org",
+    url: "https://brainwave-ai-project.vercel.app/",
     siteName: "Next.js",
     images: [
       {
-        url: "https://nextjs.org/og.png", // Must be an absolute URL
+        url: "https://brainwave-ai-project.vercel.app/assets/logo.svg", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://nextjs.org/og-alt.png", // Must be an absolute URL
+        url: "https://brainwave-ai-project.vercel.app/assets/logo.svg", // Must be an absolute URL
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "Brainwave Logo",
       },
     ],
     locale: "en_US",
