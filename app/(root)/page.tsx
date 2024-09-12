@@ -21,7 +21,7 @@ export const metadata = {
         height: 600,
       },
       {
-        url: "https://brainwave-ai-project.vercel.app/logo.svg", // Must be an absolute URL
+        url: "https://brainwave-ai-project.vercel.app/brainwave-symbol.svg", // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: "Brainwave Logo",
