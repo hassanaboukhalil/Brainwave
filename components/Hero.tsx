@@ -6,13 +6,16 @@ import { ContainerScroll } from "./ui/container-scroll-animation";
 import Image from "next/image";
 import robot from "@/assets/hero/robot.jpg";
 import loading from "@/assets/hero/loading.png";
+import { Cover } from "./ui/cover";
 
 const Hero = () => (
   <section className="my-container bg-gradient-to-b from-color-8 via-color-7 to-color-8 from-40% via-60% to-99% pt-20 md:pt-20 md:from-30%">
-    <div className="text-center text-white">
+    <div className="text-center">
       <h1 className="h1 mb-6">
         Explore the Possibilities <br /> of AI Chatting with{" "}
-        <span className="text-color-1">Brainwave</span>
+        <span className="text-color-1">
+          <Cover className="text-color-1">Brainwave</Cover>
+        </span>
       </h1>
       <div className="body-1 text-txtColor-1 mb-6 lg:mb-8 max-w-3xl mx-auto">
         <TextGenerateEffect
