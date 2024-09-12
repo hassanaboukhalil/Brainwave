@@ -13,10 +13,10 @@ export const metadata = {
     title: "Brainwave",
     description: "Explore the Possibilities of AI Chatting with Brainwave",
     url: "https://brainwave-ai-project.vercel.app/",
-    siteName: "Next.js",
+    siteName: "Brainwave",
     images: [
       {
-        url: "https://brainwave-ai-project.vercel.app/logo.svg", // Must be an absolute URL
+        url: "https://brainwave-ai-project.vercel.app/brainwave-symbol.svg", // Must be an absolute URL
         width: 800,
         height: 600,
       },
