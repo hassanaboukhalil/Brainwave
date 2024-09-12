@@ -16,12 +16,12 @@ export const metadata = {
     siteName: "Next.js",
     images: [
       {
-        url: "https://brainwave-ai-project.vercel.app/assets/logo.svg", // Must be an absolute URL
+        url: "https://brainwave-ai-project.vercel.app/logo.svg", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://brainwave-ai-project.vercel.app/assets/logo.svg", // Must be an absolute URL
+        url: "https://brainwave-ai-project.vercel.app/logo.svg", // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: "Brainwave Logo",
