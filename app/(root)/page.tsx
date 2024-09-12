@@ -7,11 +7,11 @@ import Roadmap from "@/components/Roadmap";
 import { Sponsors } from "@/components/Sponsors";
 
 export const metadata = {
-  title: "Home Page",
-  description: "Home Page of my web application",
+  title: "Brainwave",
+  description: "Explore the Possibilities of AI Chatting with Brainwave",
   openGraph: {
-    title: "Home Page",
-    description: "Home Page of my web application",
+    title: "Brainwave",
+    description: "Explore the Possibilities of AI Chatting with Brainwave",
     url: "https://my-nextjs-template.org",
     siteName: "Next.js",
     images: [
