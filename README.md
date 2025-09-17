@@ -4,6 +4,19 @@
 
 A modern AI chatting application built with Next.js 14, TypeScript, and Tailwind CSS, featuring sleek animations powered by Framer Motion.
 
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation and Setup](#installation-and-setup)
+  - [Prerequisites](#prerequisites)
+  - [Getting Started](#getting-started)
+  - [Building for Production](#building-for-production)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Deployment](#deployment)
+- [License](#license)
+
 ## Features
 
 - **Hero Section** - Eye-catching introduction with animated elements
@@ -93,6 +106,10 @@ brainwave/
 ### Full Website View
 
 ![Full Website View](./readme-images/brainwave-website-full-size.png)
+
+### Large Device View
+
+![Large Device View](./readme-images/brainwave-website-on-large-devices.png)
 
 ### Mobile Responsive Design
 
