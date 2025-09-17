@@ -16,6 +16,6 @@ export const socialMedia = [
   {
     id: "linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/hassan-abou-khalil/",
   },
 ];

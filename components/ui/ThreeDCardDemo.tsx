@@ -57,7 +57,7 @@ export function ThreeDCardDemo({
           <CardItem
             translateZ={20}
             as={Link}
-            href="https://twitter.com/mannupaaji"
+            href="https://x.com/CodingHassan"
             target="__blank"
             className="px-4 py-2 rounded-xl text-xs font-normal flex items-center cursor-pointer"
           >
