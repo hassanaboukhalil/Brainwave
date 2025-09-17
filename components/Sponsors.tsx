@@ -4,7 +4,7 @@ import { sponsers } from "@/constants/sponsers";
 import Link from "next/link";
 
 const Sponsors = () => (
-  <Section className="hidden lg:flex flex-col gap-16 items-center lg:py-[7rem] bg-gradient-to-b from-color-8 via-color-8 to-color-8 from-10% via-60% to-99%">
+  <Section className="flex flex-col gap-16 items-center lg:py-[7rem] bg-gradient-to-b from-color-8 via-color-8 to-color-8 from-10% via-60% to-99%">
     <p className="body-2 text-txtColor-1">
       Helping people create beautiful content at
     </p>
