@@ -4,6 +4,8 @@
 
 A modern AI chatting application built with Next.js 14, TypeScript, and Tailwind CSS, featuring sleek animations powered by Framer Motion.
 
+**[Live Demo](https://brainwave-ai-project.vercel.app/)** | Explore the live application
+
 ## Table of Contents
 
 - [Features](#features)
