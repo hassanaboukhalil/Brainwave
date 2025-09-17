@@ -1,5 +1,7 @@
 # Brainwave - Explore the Possibilities of AI Chatting
 
+![Brainwave Application](./readme-images/brainwave-website-on-large-devices.png)
+
 A modern AI chatting application built with Next.js 14, TypeScript, and Tailwind CSS, featuring sleek animations powered by Framer Motion.
 
 ## Features
@@ -91,10 +93,6 @@ brainwave/
 ### Full Website View
 
 ![Full Website View](./readme-images/brainwave-website-full-size.png)
-
-### Large Device View
-
-![Large Device View](./readme-images/brainwave-website-on-large-devices.png)
 
 ### Mobile Responsive Design
 
