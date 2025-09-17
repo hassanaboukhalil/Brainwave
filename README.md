@@ -2,23 +2,6 @@
 
 A modern AI chatting application built with Next.js 14, TypeScript, and Tailwind CSS, featuring sleek animations powered by Framer Motion.
 
-## Screenshots
-
-### Full Website View
-
-![Full Website View](./readme-images/brainwave-website-full-size.png)
-
-### Large Device View
-
-![Large Device View](./readme-images/brainwave-website-on-large-devices.png)
-
-### Mobile Responsive Design
-
-<div style="display: flex; gap: 20px;">
-  <img src="./readme-images/brainwave-website-on-small-devices.png" alt="Mobile View" width="48%">
-  <img src="./readme-images/brainwave-website-on-small-devices-navbar.png" alt="Mobile Navigation" width="48%">
-</div>
-
 ## Features
 
 - **Hero Section** - Eye-catching introduction with animated elements
@@ -102,6 +85,23 @@ brainwave/
 ├── public/              # Public assets served from root
 └── utils/               # Helper functions and types
 ```
+
+## Screenshots
+
+### Full Website View
+
+![Full Website View](./readme-images/brainwave-website-full-size.png)
+
+### Large Device View
+
+![Large Device View](./readme-images/brainwave-website-on-large-devices.png)
+
+### Mobile Responsive Design
+
+<div style="display: flex; gap: 20px;">
+  <img src="./readme-images/brainwave-website-on-small-devices.png" alt="Mobile View" width="48%">
+  <img src="./readme-images/brainwave-website-on-small-devices-navbar.png" alt="Mobile Navigation" width="48%">
+</div>
 
 ## Deployment
 
